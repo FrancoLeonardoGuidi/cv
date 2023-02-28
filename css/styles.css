@@ -1,0 +1,94 @@
+
+html {
+    background-color: lightslategray;    
+}
+
+body {
+    background-color: whitesmoke;
+    background-repeat: repeat;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    padding: 10px;
+    background-color: #173c53;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+section {
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contacto {
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.contacto img {
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+.tabla_ancho td:first-child {
+    vertical-align: top;
+    width: 20%; 
+    max-width: fit-content;
+}
+
+.tabla-ancho td:not(:first-child) {
+    vertical-align: top;
+    width: 90%; 
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px; 
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.lista_1 {
+    list-style-type: circle;
+}
+
+.lista_2 {
+    list-style-type:square;
+    margin-left: 30px;
+    margin-bottom: 4px;
+}
+
+footer {
+    padding: 15px;
+    background-color: #0d2534;
+    color: white;
+}
+
+#exp_lab, #exp_art, #form, #form_ad {
+    display: none;
+}
+
+.flecha_menu {
+    transform: rotate(270deg);
+}
