@@ -14,34 +14,32 @@
 
     <!-- Vinculación con archivo .css -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <!-- Vinculación con archivo .js -->
-    <script src="js/scripts.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Franco Guidi</h1>
-        <p>Lic. en Artes Musicales con orientación en Piano</p>
-        <div class="contacto">
-            <span class="contacto">@frguidi.musica</span>
-            <img src="images/ig_logo.png" alt="email" height="20" width="20">
+        <div>
+            <h1>Franco Guidi</h1>
+            <h3>Lic. en Artes Musicales con orientación en Piano</h3>
+        
+            <!-- Colocar barra de botones -->
+    
         </div>
-        <div class="contacto">
-            <span class="contacto">francoleonardoguidi@gmail.com</span>
-            <a href="mailto:francoleonardoguidi@gmail.com">
-                <img src="images/mail_logo.png" alt="ig" height="20" width="20"/>
-            </a>
-        </div>
+        <div style="display: flex; justify-content: flex-end;">
+            <audio controls autoplay muted>
+                <source src="/media/audio/gershwin_summertime.mp3" type="audio/mpeg">
+                Tu navegador no soporta este elemento de audio.
+            </audio>
+        </div> 
     </header>
 
     <section>
         <div>
             <span class="titulo">Experiencia laboral</span>
-            <img src="images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('exp_lab')">
+            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('exp_lab')">
         </div>
 
-        <table class="tabla_ancho" id="exp_lab">
+        <table id="exp_lab">
             <tr>
                 <td class="columna_1">2021 - act.</td>
                 <td class="columna_2">
@@ -91,7 +89,7 @@
     <section>
         <div>
             <span class="titulo">Experiencia artística</span>
-            <img src="images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('exp_art')">
+            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('exp_art')">
         </div>
         <div  id="exp_art">
             <p>Realización de conciertos y muestras de Piano y Música de cámara en la sala García Morillo (UNA, DAMus), Salón Dorado de la Casa de Cultura de Ramos Mejía, Museo "Fernandez Blanco”, Auditorio de la AMIA, Colegio Mekhitarista, Iglesia Dinamarquesa de San Telmo, Espacio Amadeus (Hurlingham), entre otros.</p>
@@ -102,9 +100,9 @@
     <section>
         <div>
             <span class="titulo">Formación</span>
-            <img src="images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('form')">
+            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('form')">
         </div>
-        <table class="tabla_ancho"  id="form">
+        <table class="tabla_ancho" id="form">
             <tr>
                 <td class="columna_1">2023 - act.</td>
                 <td class="columna_2">
@@ -150,7 +148,7 @@
     <section>
         <div>
             <span class="titulo">Formación adicional</span>
-            <img src="images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('form_ad')" >
+            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('form_ad')" >
         </div>
         <table class="tabla_ancho" id="form_ad">
             <tr>
@@ -220,10 +218,43 @@
             </tr>
         </table>
     </section>
-    
+
+    <section>
+        <div>
+            <span class="titulo">Contacto</span>
+            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('contacto')">
+        </div>
+        <div  id="contacto">
+            <br>
+            <form method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+				<label for="email">Mensaje:</label><br>
+                <textarea name="mensaje" rows="10" cols="100"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <br>
+        <div class="contacto">
+            <span class="contacto">@frguidi.musica</span>
+            <a href="https://www.instagram.com/frguidi.musica/">
+                <img src="media/images/ig_logo.png" alt="email" height="20" width="20">
+            </a>
+        </div>
+        <div class="contacto">
+            <span class="contacto">francoleonardoguidi@gmail.com</span>
+            <a href="mailto:frguidi.musica@gmail.com">
+                <img src="media/images/mail_logo.png" alt="ig" height="20" width="20"/>
+            </a>
+        </div>
     </footer>
+
+    <!-- Vinculación con archivo .js -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
 
