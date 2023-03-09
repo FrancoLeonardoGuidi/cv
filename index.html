@@ -17,26 +17,23 @@
 </head>
 
 <body>
+    <!-- Encabezado -->
     <header>
-        <div>
+        <div style="display: flex; align-items: center;">
             <h1>Franco Guidi</h1>
-            <h3>Lic. en Artes Musicales con orientación en Piano</h3>
-        
-            <!-- Colocar barra de botones -->
-    
+
+            <!-- Audio -->
+            <img src="media/images/volume-xmark-solid.svg" alt="Música" class="icono_blanco" onclick="reproducirAudio()">
+            <audio id="parlante" src="media/audio/gershwin_summertime.mp3"></audio>
         </div>
-        <div style="display: flex; justify-content: flex-end;">
-            <audio controls autoplay muted>
-                <source src="/media/audio/gershwin_summertime.mp3" type="audio/mpeg">
-                Tu navegador no soporta este elemento de audio.
-            </audio>
-        </div> 
+        <h3>Lic. en Artes Musicales con orientación en Piano</h3>
     </header>
 
+    <!-- Sección: Experiencia laboral -->
     <section>
         <div>
             <span class="titulo">Experiencia laboral</span>
-            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('exp_lab')">
+            <img src="media/images/angle-right-solid.svg" style="height: 22px; width: 22px;" alt="Mostrar/ocultar" class="flecha_menu" onclick="mostrarOcultar('exp_lab')">
         </div>
 
         <table id="exp_lab">
@@ -86,10 +83,11 @@
         </table>
     </section>
 
+    <!-- Sección: Experiencia artística -->
     <section>
         <div>
             <span class="titulo">Experiencia artística</span>
-            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('exp_art')">
+            <img src="media/images/angle-right-solid.svg" alt="Mostrar/ocultar" class="flecha_menu" onclick="mostrarOcultar('exp_art')">
         </div>
         <div  id="exp_art">
             <p>Realización de conciertos y muestras de Piano y Música de cámara en la sala García Morillo (UNA, DAMus), Salón Dorado de la Casa de Cultura de Ramos Mejía, Museo "Fernandez Blanco”, Auditorio de la AMIA, Colegio Mekhitarista, Iglesia Dinamarquesa de San Telmo, Espacio Amadeus (Hurlingham), entre otros.</p>
@@ -100,9 +98,9 @@
     <section>
         <div>
             <span class="titulo">Formación</span>
-            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('form')">
+            <img src="media/images/angle-right-solid.svg" alt="→" class="flecha_menu" onclick="mostrarOcultar('form')">
         </div>
-        <table class="tabla_ancho" id="form">
+        <table id="form">
             <tr>
                 <td class="columna_1">2023 - act.</td>
                 <td class="columna_2">
@@ -145,12 +143,13 @@
         </table>
     </section>
 
+    <!-- Sección: Formación adicional -->
     <section>
         <div>
             <span class="titulo">Formación adicional</span>
-            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('form_ad')" >
+            <img src="media/images/angle-right-solid.svg" alt="Mostrar/ocultar" class="flecha_menu" onclick="mostrarOcultar('form_ad')">
         </div>
-        <table class="tabla_ancho" id="form_ad">
+        <table id="form_ad">
             <tr>
                 <td class="columna_1">Idiomas<br></td>
                 <td class="columna_2">
@@ -219,36 +218,38 @@
         </table>
     </section>
 
+    <!-- Sección: Contacto -->
     <section>
         <div>
             <span class="titulo">Contacto</span>
-            <img src="media/images/menu_flecha.png" alt="↓" height="20" widht="20" class="flecha_menu" onclick="mostrarOcultar('contacto')">
+            <img src="media/images/angle-right-solid.svg" alt="Mostrar/ocultar" class="flecha_menu" onclick="mostrarOcultar('contacto')">
         </div>
         <div  id="contacto">
             <br>
-            <form method="post">
+            <form action="mailto:destinatario@dominio.com" method="post" enctype="text/plain">
                 <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre"><br>
+                <input type="text" id="nombre" name="nombre" required><br>
                 <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email"><br>
-				<label for="email">Mensaje:</label><br>
-                <textarea name="mensaje" rows="10" cols="100"></textarea><br>
+                <input type="email" id="email" name="email" required><br>
+			    <label for="email">Mensaje:</label><br>
+                <textarea name="mensaje" rows="10"></textarea><br>
                 <input type="submit" value="Enviar">
             </form>
         </div>
     </section>
 
+    <!-- Pie de página -->
     <footer>
         <div class="contacto">
             <span class="contacto">@frguidi.musica</span>
             <a href="https://www.instagram.com/frguidi.musica/">
-                <img src="media/images/ig_logo.png" alt="email" height="20" width="20">
+                <img src="media/images/instagram.svg" class="icono_blanco" alt="email">
             </a>
         </div>
         <div class="contacto">
             <span class="contacto">francoleonardoguidi@gmail.com</span>
             <a href="mailto:frguidi.musica@gmail.com">
-                <img src="media/images/mail_logo.png" alt="ig" height="20" width="20"/>
+                <img src="media/images/envelope-solid.svg" class="icono_blanco" alt="ig"/>
             </a>
         </div>
     </footer>
