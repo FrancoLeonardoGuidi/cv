@@ -1,4 +1,3 @@
-
 html {
     background-color: lightslategray;    
 }
@@ -18,10 +17,6 @@ header {
     padding-left: 30px;
     padding-right: 30px;
     color: white;
-}
-
-header h1 {
-    
 }
 
 .titulo {
@@ -115,3 +110,24 @@ textarea {
 img:hover {
     cursor: pointer;
 }
+
+.imagen_balanceo:hover {
+    cursor: default;
+}
+
+.imagen_balanceo {
+    position: relative;
+    animation: balance 5s ease-in-out infinite;
+}
+
+@keyframes balance {
+    0% {
+        transform: rotate(-5deg) translateY(-5px);
+    }
+    50% {
+        transform: rotate(5deg) translateY(5px);
+    }
+    100% {
+        transform: rotate(-5deg) translateY(-5px);
+    }
+  }
