@@ -19,14 +19,24 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <div style="display: flex; align-items: center;">
-            <h1>Franco Guidi</h1>
-
-            <!-- Audio -->
+        <table>
+            <tr>
+                <td>
+                    <h1>Franco Guidi</h1>
+                    <h3>Lic. en Artes Musicales con orientación en Piano</h3>
+                </td>
+                <td style="text-align: center;">
+                    <img src="media/images/logo-piano.svg" alt="Logo" class="imagen_balanceo" style="height: 200px; width: 200px;">
+                </td>
+            </tr> 
+        </table>
+            
+        <!-- Audio -->
+        <div style="text-align: right;">
             <img src="media/images/volume-xmark-solid.svg" alt="Música" class="icono_blanco" onclick="reproducirAudio()">
             <audio id="parlante" src="media/audio/gershwin_summertime.mp3"></audio>
         </div>
-        <h3>Lic. en Artes Musicales con orientación en Piano</h3>
+        
     </header>
 
     <!-- Sección: Experiencia laboral -->
